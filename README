@@ -1,5 +1,16 @@
 # Emergency Department Throughput Analysis
 
+## Data Access
+
+Due to GitHub file size limits, the raw CMS dataset is not included in this repository.
+
+The data can be downloaded directly from:
+Centers for Medicare & Medicaid Services (CMS)
+Timely and Effective Care – Hospital dataset
+https://data.cms.gov
+
+After downloading, place the CSV file in the `data/` directory before running the notebook.
+
 ## Objective
 Analyze emergency department (ED) throughput performance across U.S. hospitals using CMS quality data, with a focus on identifying variation in length of stay and operational bottlenecks for different patient dispositions.
 
@@ -30,9 +41,8 @@ Analyze emergency department (ED) throughput performance across U.S. hospitals u
 - “Left before being seen” represents a distinct behavioral outcome and should be analyzed separately from length-of-stay metrics
 
 ## Visualizations
-Emergency department throughput performance was visualized using boxplots to compare distributions of length-of-stay and related ED measures across U.S. hospitals. The visualization includes overall ED length of stay, psychiatric/mental health patient throughput, transfer patient throughput, and rates of patients leaving before being seen.
-
-The boxplots highlight substantial variation across hospitals, with psychiatric and transfer patients experiencing significantly longer ED stays compared to general ED visits. Wide interquartile ranges and extreme outliers suggest systemic operational bottlenecks rather than isolated delays. Measures related to patients leaving before being seen exhibit a distinct distribution and were interpreted separately from time-based throughput metrics.
+- Emergency department throughput performance was visualized using boxplots to compare distributions of length-of-stay and related ED measures across U.S. hospitals. The visualization includes overall ED length of stay, psychiatric/mental health patient throughput, transfer patient throughput, and rates of patients leaving before being seen.
+- The boxplots highlight substantial variation across hospitals, with psychiatric and transfer patients experiencing significantly longer ED stays compared to general ED visits. Wide interquartile ranges and extreme outliers suggest systemic operational bottlenecks rather than isolated delays. Measures related to patients leaving before being seen exhibit a distinct distribution and were interpreted separately from time-based throughput metrics.
 
 ## Tools Used
 - Python
